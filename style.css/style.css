@@ -1,9 +1,9 @@
-/* Variables CSS para fácil edición de colores y fuentes */
+
 :root {
-    --color-primary: #8a0606; /* Rojo oscuro elegante */
-    --color-secondary: #f0f0f0; /* Gris claro para fondos */
-    --color-text: #333; /* Texto principal */
-    --color-light-text: #fff; /* Texto sobre fondos oscuros */
+    --color-primary: #8a0606; 
+    --color-secondary: #f0f0f0; 
+    --color-text: #333; 
+    --color-light-text: #fff; 
     --font-heading: 'Playfair Display', serif;
     --font-body: 'Roboto', sans-serif;
 }
@@ -61,7 +61,7 @@ p {
 }
 
 .btn:hover {
-    background-color: #6a0000; /* Un rojo un poco más oscuro al pasar el ratón */
+    background-color: #6a0000; 
     transform: translateY(-2px);
 }
 
@@ -74,13 +74,13 @@ p {
 /* Hero Section */
 .hero {
     position: relative;
-    height: 100vh; /* Ocupa toda la altura de la ventana */
+    height: 100vh; 
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     color: var(--color-light-text);
-    overflow: hidden; /* Para que la imagen no se desborde */
+    overflow: hidden; 
 }
 
 .hero-image {
@@ -89,8 +89,8 @@ p {
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Cubre el área sin distorsionar la imagen */
-    z-index: -2; /* Detrás del contenido y el overlay */
+    object-fit: cover; 
+    z-index: -2;
 }
 
 .hero-overlay {
@@ -99,12 +99,12 @@ p {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.6); /* Oscurece la imagen para que el texto resalte */
+    background: rgba(0, 0, 0, 0.6); 
     z-index: -1;
 }
 
 .hero-content {
-    position: relative; /* Asegura que el contenido esté sobre la imagen y el overlay */
+    position: relative; 
     z-index: 1;
     padding: 20px;
     max-width: 800px;
@@ -139,7 +139,7 @@ p {
 .section-details {
     background-color: var(--color-light-text);
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    margin-top: -50px; /* Se superpone ligeramente con el hero */
+    margin-top: -50px; 
     position: relative;
     z-index: 2;
     border-radius: 10px;
@@ -198,7 +198,7 @@ p {
 .form-group input[type="text"],
 .form-group input[type="email"],
 .form-group input[type="number"] {
-    width: calc(100% - 20px); /* Ancho total menos padding */
+    width: calc(100% - 20px); 
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;

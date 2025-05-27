@@ -1,6 +1,6 @@
-// --- Contador Regresivo ---
+
 const countdownElement = document.getElementById('countdown');
-const eventDate = new Date('July 21, 2025 20:00:00').getTime(); // Establece la fecha y hora de tu evento
+const eventDate = new Date('July 21, 2025 20:00:00').getTime(); 
 
 function updateCountdown() {
     const now = new Date().getTime();
@@ -8,7 +8,7 @@ function updateCountdown() {
 
     if (distance < 0) {
         countdownElement.innerHTML = "¡El evento ha comenzado!";
-        clearInterval(countdownInterval); // Detiene el contador
+        clearInterval(countdownInterval); 
         return;
     }
 
@@ -25,44 +25,43 @@ function updateCountdown() {
     `;
 }
 
-// Actualiza el contador cada segundo
+
 const countdownInterval = setInterval(updateCountdown, 1000);
-updateCountdown(); // Llama una vez para mostrar el contador inmediatamente
+updateCountdown(); 
 
 // --- Formulario de Inscripción ---
 const form = document.getElementById('inscripcion-form');
 const formMessage = document.getElementById('form-message');
 
 form.addEventListener('submit', function(event) {
-    event.preventDefault(); // Evita que el formulario se envíe de la forma tradicional
+    event.preventDefault(); 
 
     const nombre = document.getElementById('nombre').value;
     const email = document.getElementById('email').value;
     const tickets = document.getElementById('tickets').value;
 
-    // Aquí normalmente enviarías estos datos a un servidor (backend)
-    // Para este 101, solo mostraremos un mensaje de éxito o error.
+    
 
     if (nombre && email && tickets > 0) {
-        // Simulación de envío exitoso
+        
         formMessage.textContent = `¡Gracias, ${nombre}! Has reservado ${tickets} entrada(s). Te hemos enviado un email de confirmación a ${email}.`;
         formMessage.className = 'form-message success';
-        form.reset(); // Limpia el formulario
+        form.reset(); 
     } else {
         formMessage.textContent = 'Por favor, completa todos los campos correctamente.';
         formMessage.className = 'form-message error';
     }
 
-    // Pequeño efecto visual al enviar
+    
     form.querySelector('.btn-submit').style.transform = 'scale(0.98)';
     setTimeout(() => {
         form.querySelector('.btn-submit').style.transform = 'scale(1)';
     }, 100);
 });
 document.addEventListener('DOMContentLoaded', function() {
-    // Código para el contador regresivo (si lo tienes)
+    
     const countdownElement = document.getElementById('countdown');
-    const targetDate = new Date('October 29, 2023 20:00:00').getTime(); // Asegúrate que esta es la fecha y hora correctas
+    const targetDate = new Date('October 29, 2023 20:00:00').getTime(); 
 
     function updateCountdown() {
         const now = new Date().getTime();
@@ -83,18 +82,17 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     const countdownInterval = setInterval(updateCountdown, 1000);
-    updateCountdown(); // Llamada inicial para evitar un retraso de 1 segundo
+    updateCountdown(); 
 
     // Código para el formulario de inscripción
     const inscripcionForm = document.getElementById('inscripcion-form');
     const formMessage = document.getElementById('form-message');
 
-    if (inscripcionForm && formMessage) { // Asegurarse de que los elementos existen
+    if (inscripcionForm && formMessage) { 
         inscripcionForm.addEventListener('submit', function(event) {
-            event.preventDefault(); // Evita que el formulario se envíe de la forma tradicional y recargue la página
+            event.preventDefault(); 
 
-            // Aquí puedes agregar lógica para enviar los datos a un servidor (opcional)
-            // Por ahora, solo mostraremos el mensaje de confirmación
+            
 
             formMessage.textContent = '¡Gracias por tu reserva! Te esperamos.';
             formMessage.style.color = '#28a745'; // Color verde para éxito
@@ -102,9 +100,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
             // Opcional: limpiar el formulario después de un tiempo
             setTimeout(() => {
-                inscripcionForm.reset(); // Resetea los campos del formulario
-                formMessage.textContent = ''; // Limpia el mensaje
-                formMessage.style.display = 'none'; // Oculta el mensaje
+                inscripcionForm.reset(); 
+                formMessage.textContent = ''; 
+                formMessage.style.display = 'none'; 
             }, 5000); // El mensaje desaparecerá después de 5 segundos
         });
     } else {
