@@ -1,0 +1,1 @@
+This repository contains the source code for a landing page designed to invite attendees to a theater play titled "Chocolate". The main goal of the page is to provide essential event information and allow interested individuals to reserve their spots through an enrollment form.
