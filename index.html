@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitación Teatral: Chocolate</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+
+    <meta property="og:title" content="Invitación Teatral: Chocolate">
+    <meta property="og:description" content="Página diseñada para invitar a una obra de teatro, proporcionando información esencial y permitiendo reservar lugares.">
+    <meta property="og:image" content="https://calopaoo.github.io/Invitaci-n-Chocolate/ogchoco.jpg">
+    <meta property="og:url" content="https://calopaoo.github.io/Invitaci-n-Chocolate/">
+    <meta property="og:type" content="website">
+    </head>
+</head>
+<body>
+    <header class="hero">
+        <div class="hero-overlay"></div>
+        <img src="choco 1.jpg" alt="Chocolate" class="hero-image">
+        <div class="hero-content">
+            <h1>Chocolate</h1>
+            <p class="tagline">Una experiencia inolvidable. ¡Prepárate para la magia!</p>
+            <a href="#inscripcion-form" class="btn btn-hero">¡Reserva tu Lugar!</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="detalles" class="section-details">
+            <div class="container">
+                <h2>Detalles del Evento</h2>
+
+                <div class="detail-item">
+                    <h3>Fecha y Hora:</h3>
+                    <p>Viernes, Sábado y Domingo 29, 30, 01, 06, 07 y 08 de octubre de 2023 | 8:00 PM</p>
+                </div>
+
+                <div class="detail-item">
+                    <h3>Lugar:</h3>
+                    <p>Teatro Atahualpa del Cioppo</p>
+                    <p>Dirección: Heredia, San Pablo</p>
+                    
+                    <div class="map-container">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.2001155548387!2d-84.10870182416703!3d10.000322473027564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0facc046db6eb%3A0x70c86a4f2fc65c5d!2sTeatro%20Atahualpa%20del%20Cioppo!5e0!3m2!1ses-419!2scr!4v1748355942208!5m2!1ses-419!2scr" 
+                            width="600"
+                            height="450"
+                            style="border:0;"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                    
+            
+             </section> 
+             
+             <section id="inscripcion" class="section-form">
+            <div class="container">
+                <h2>Inscríbete Ahora</h2>
+                <p class="form-description">Asegura tu lugar para esta experiencia única. ¡Las entradas son limitadas!</p>
+                <form id="inscripcion-form"> <div class="form-group">
+                        <label for="nombre">Nombre Completo:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="tickets">Cantidad de Entradas:</label>
+                        <input type="number" id="tickets" name="tickets" min="1" value="1" required>
+                    </div>
+                    <button type="submit" class="btn btn-submit">Confirmar Asistencia</button>
+                    <p id="form-message" class="form-message"></p>
+                </form>
+            </div> </section> </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 Paola Cabrera López. Todos los derechos reservados.</p>
+            <p>Contacto: kpaola.cabrera@gmail.com</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
